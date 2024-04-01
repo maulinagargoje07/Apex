@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ApexBikes</title>
+	
+	<meta charset="UTF-8" />
+
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+	<link rel="manifest" href="assets/favicons/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#F2CE6E">
+	<meta name="theme-color" content="#F2CE6E">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="loader">
+		<p>Loading... Please wait</p>
+		<div class="progress"></div>
+	</div>
+
+	<div class="container">
+		<div class="logo">
+			<img src="./assets/images/headerlogo.png" alt="Logo">
+		</div>
+		<section class="section first">
+			<div class="section--one--container">
+				<h1>Built to Last, Made to Move</h1>
+				<p>We use high-quality, durable materials to ensure your Apex bike becomes a trusted companion for countless adventures.</p>
+			</div>
+		</section>
+
+		<section class="section second">
+			<div class="section--two--container">
+				<h1>Crafted for Speed</h1>
+				<p>Experience the rush of acceleration with our meticulously designed drivetrains and aerodynamic features. Feel the wind in your hair as you conquer every ride.</p>
+			</div>
+		</section>
+
+		<section class="section third">
+			<div class="section--third--container">
+				<h1>Feel the Difference</h1>
+				<p>The Apex difference is tangible. Experience the superior comfort, control, and responsiveness that will take your cycling experience to the next level.</p>
+			</div>
+		</section>
+
+		<section class="section forth">
+			<div class="section--forth--container">
+				<h1>Unleash Your Potential</h1>
+				<p>Apex bikes are engineered for peak performance, featuring lightweight frames, high-performance components, and efficient designs that help you achieve your cycling goals</p>
+			</div>
+		</section>
+
+		<section class="section fifth">
+			<div class="backtext">APEX</div>
+			<div class="section--fifth--container">
+				<h1>Confidence in Every Corner</h1>
+				<p>Apex bikes boast superior handling and responsive braking systems, giving you the control you crave for a safe and exhilarating ride.</p>
+			</div>
+		</section>
+
+	</div>
+
+	<div id="webgi-canvas-container">
+		<canvas id="webgi-canvas"></canvas>
+	</div>
+
+	<footer class="footer-1">
+			<div class="logo-section">
+				<img src="./assets/images/desktopfullogo.png" alt="LOGO">
+				<h1>FEEL THE RUSH</h1>
+			</div>
+	</footer>
+
+	<footer class="footer">
+			<div class="left">
+				<p>Designed and Developed by</p>
+				<img src="./assets/images/Rebootlogoblack.png" alt="Footer Logo">
+			</div>
+			<div class="right">
+				<p>Contact Number : +91 7057141513</p>
+				<p>Location:- Kothrud Pune 411038</p>
+				<p>Email ID:- sales@rebootcas.com</p>
+			</div>
+			<div class="social">
+				<p>Socials</p>
+				<a href="https://in.linkedin.com/company/reboot-consultancy-services"><img src="./assets/images/Vector.png" alt="linkin"></a>
+			</div>
+	</footer>
+
+	<script type="text/javascript">
+		window.addEventListener('scroll', reveal);
+
+		function reveal() {
+			var reveals = document.querySelectorAll('.reveal');
+
+			for (var i = 0; i < reveals.length; i++) {
+
+				var windowheight = window.innerHeight;
+				var revealtop = reveals[i].getBoundingClientRect().top;
+				var revealpoint = 30;
+
+				if (revealtop < windowheight - revealpoint) {
+					reveals[i].classList.add('active');
+				} else {
+					reveals[i].classList.remove('active');
+				}
+			}
+		}
+
+	</script>
+
+	<script src="src/index.ts"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+</body>
+
+</html>
